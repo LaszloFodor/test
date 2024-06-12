@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: init_app_tables
+      author: laszlofodor
+      changes:
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/ddl/create_user.sql
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/ddl/create_address.sql
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/ddl/create_phone.sql

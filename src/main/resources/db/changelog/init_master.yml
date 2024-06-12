@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: 1.0.0/1.0.0_master.yml
+  - include:
+      relativeToChangelogFile: true
+      file: initdata/initdata_master.yml

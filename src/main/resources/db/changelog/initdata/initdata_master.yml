@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_init_data
+      author: laszlofodor
+      changes:
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/dml/insert_users.sql
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/dml/insert_addresses.sql
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: scripts/dml/insert_phone.sql

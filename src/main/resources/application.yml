@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    show-sql: false
+  liquibase:
+    change-log: db/changelog/init_master.yml
+    drop-first: true
+server:
+  port: 10000
